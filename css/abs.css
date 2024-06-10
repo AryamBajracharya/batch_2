@@ -1,0 +1,53 @@
+/* .main-div{
+    background-color: aqua;
+    width: 800px;
+    height: 500px;
+    position: relative;
+}
+
+/* .second-div{
+    position: absolute;
+    height: 200px;
+    width: 250px;
+    background-color: palegreen;
+
+     centre 
+
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+
+}
+*/ 
+
+/* .second-div{
+    position: fixed;
+    height: 200px;
+    width: 250px;
+    background-color: palegreen;
+
+    /* centre 
+
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+
+} */ 
+
+h1{
+    background-color: black;
+    color: white;
+    position: -webkit-sticky;
+
+    /* safari and broweser that doesnot support sticky position */
+
+    position: sticky;
+    top: 0;
+
+}
+
+.main-div{
+    width: 1500px;
+    height: auto;
+}
+

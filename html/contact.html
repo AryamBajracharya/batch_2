@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: #181818;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 1.1em;
+        }
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 100px; 
+    margin-right: 10px;
+    font-size: 1.1em;
+    color: #ffc107;
+}
+
+.form-group input, .form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0a800;
+}
+
+.footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #282828;
+        }
+
+.footer p {
+            font-size: 12px;
+            color: #ddd;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to us with any questions or feedback.</p>
+        </div>
+
+        <div class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" required placeholder="Enter your message here..."></textarea>
+                </div>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        
+        
+
+        <div class="footer">
+            <p>&copy; 2023 Estella. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

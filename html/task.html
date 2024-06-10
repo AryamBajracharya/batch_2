@@ -1,0 +1,222 @@
+
+<!-- 
+
+                - TASK 1 :
+
+1. Meta Tags:
+
+Author: Specifies the author of the document.
+
+Description: Provides a brief description of the page's content, useful for search engines.
+
+
+
+2. Title Tag:
+
+Title: Sets the title of the web page, which appears in the browser's title bar or tab.
+
+
+
+
+3. Style Block:
+
+Style: Contains CSS to style the HTML elements, improving the visual presentation.
+
+
+
+
+4. h1 Element:
+
+Heading: Defines the main heading of the document. The id attribute allows the element to be targeted with CSS or linked to directly.
+
+
+
+
+5. Paragraph and Span Elements:
+
+Paragraph: Represents a paragraph of text.
+
+Span: Used to apply styles to a part of the text within a paragraph.
+
+
+
+
+6. Horizontal Rule (hr):
+
+Horizontal Rule: Creates a horizontal line, used to separate content sections visually.
+
+
+
+
+7. Image (img):
+
+Image: Embeds an image in the document. The src attribute specifies the image URL, width and height define the dimensions, and alt provides alternative text for accessibility.
+
+
+
+
+
+8. Text Formatting:
+
+Bold: Makes the text bold.
+
+Strong: Also makes the text bold, with semantic emphasis indicating importance.
+
+Italic: Makes the text italic.
+
+Emphasized: Also makes the text italic, with semantic emphasis indicating stress.
+
+Small: Decreases the text size.
+
+Marked: Highlights the text.
+
+Deleted: Indicates deleted or incorrect text, often shown with a strikethrough.
+
+Inserted: Indicates inserted or new text, often shown with an underline.
+
+Superscript: Displays text as superscript.
+
+Subscript: Displays text as subscript.
+
+
+
+
+
+9. Quote (q):
+
+Quote: Represents a short inline quotation.
+
+
+
+
+10. Abbreviation (abbr):
+
+Abbreviation: Represents an abbreviation or acronym. The title attribute provides the full term for the abbreviation.
+
+
+
+
+11. Address:
+
+Address: Provides contact information, typically rendered in italics by browsers.
+
+
+
+
+12. Links (a):
+
+Internal Link: Links to another page within the same website.
+
+Fragment Link: Links to an element with the specified id within the same document.
+
+External Link: Links to an external website. The target="_blank" attribute opens the link in a new tab or window.
+
+
+-->
+
+
+
+
+
+<!-- 
+                - TASK 2 : 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: linear-gradient(to right, #f8cdda, #1d2b64);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header h2 {
+            font-size: 14;
+            margin-bottom: 10px;
+            color: #1d2b64;
+        }
+        .content h3 {
+            color: #333;
+            font-size: 12;
+            margin-bottom: 15px;
+        }
+        .content p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #1d2b64;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .social-links a:hover {
+            color: #f8cdda;
+        }
+    </style>
+
+    <div class="container">
+        <div class="header">
+
+            <img src="https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/280587423_1417472852057541_3392617910626071433_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=G1prQf8RRCwQ7kNvgG95OaF&_nc_ht=scontent.fktm17-1.fna&oh=00_AYBcsI6grBWIbWijwR_uCxOFUOiFaXXHxO4BdrItK7qvqw&oe=6663C920" alt="Profile Photo" class="profile-photo">
+
+            <h2>Aryam Bajracharya</h2>
+
+        </div>
+
+        <div class="content">
+
+            <h3>About Me</h3>
+
+            <p>Hello! My name is Aryam Bajracharya, and I am 19 years old. I am a student currently studying Bsc(hons) CS and SE in PCPS college with a passion for becoming an full stack developer. In my free time, I play games, write some poems, some songs, listen songs. I love to play guitar, tabala, harmonium and other classical instruments which i know. I am quite famous in the Lalitpur district speciall around Mangalbazar. I dance in classical, traditional dance called "Gaan Pyakha" as Singhini which is basically a Singha which guards. I have been doing it for 6 years and i am yet continuing it. This dance is practiced on Dashain, this dance is 350 years old which has been in practice till the date.</p>
+
+            <p>Talking about my skills i am quite good in java, python, html/css/js and i know how to use oracle apex properly. I am learning MERN Stack currently. I can speak multiple languages i.e English, Nepali, Newari, Hindi.</p>
+
+            <p>Feel free to connect with me on social media or reach out via email.</p>
+
+            <div class="social-links">
+
+                <a href="https://www.facebook.com/aryam.bajracharya/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/aryam_bazz/" target="_blank">Instagram</a>
+
+                <a href="mailto:aryambajracharya00@gmail.com">Email</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

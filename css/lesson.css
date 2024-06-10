@@ -1,0 +1,28 @@
+/* 3 types of CSS
+
+  Inline
+  External
+  Internal 
+  
+ . = class
+ # = id */
+
+
+/* External CSS */
+
+
+  #Lorem{
+    color: bisque;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 20px;
+  }
+
+
+  *{                             /* Universal selector */
+    color:white;
+    background-color: black;
+  }
+
+
+  

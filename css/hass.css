@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.header .logo {
+    font-size: 1.5em;
+}
+
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.features .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.features .gallery-item {
+    position: relative;
+}
+
+.features .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.features .gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.menu .container {
+    padding: 2em 0;
+}
+
+.menu-item {
+    margin-bottom: 2em;
+}
+
+.menu-item h2 {
+    margin-bottom: 0.5em;
+}
+
+.menu-item p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item .price {
+    font-weight: bold;
+}
+
+.contact .container {
+    padding: 2em 0;
+}
+
+.contact-info {
+    margin-bottom: 2em;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+}
+
+.map {
+    margin-top: 2em;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .header .container {
+        flex-direction: column;
+    }
+
+    .features .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item p {
+        flex-direction: column;
+    }
+}

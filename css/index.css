@@ -1,0 +1,113 @@
+
+#container,  #para{
+    color: black;
+    background-color: aqua;
+    font-size: larger;
+    border: 1px solid black;
+    background-color: aqua ;
+
+}
+
+/* unvisited link */
+
+#private:link,
+#face:link{
+    color:crimson;
+}
+
+
+
+/* visited link */
+
+#private:visited,
+#face:visited{
+    color:green;
+}
+
+
+
+/* mouse over link */
+
+#face:hover{
+    color: blue;
+}
+#private:hover{
+    color:rgb(92, 43, 226)
+}
+
+
+
+
+
+
+#para::first-letter{
+    text-transform: lowercase;
+}
+
+
+
+#para::first-line{
+    font-size: 15px;
+}
+
+
+
+#para::before{
+    content: url(https://cdn.britannica.com/54/190954-120-98800F36/Satan-cast-out-by-archangel-Michael-Paradise-Lost-illustration-Gustave-Dore-1866.jpg);
+}
+
+
+
+#para::after{
+    content: "after"
+}
+
+
+input[type = "text"]{
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid greenyellow;
+    font-size: 16px;
+}
+
+
+/* .main-div h1{
+    background-color: orange;
+    color: white;
+}
+
+
+.main-div > h1{
+    background-color: orange;
+    color: white;
+} */
+
+
+h1 + h2{
+    background-color: orange;
+    color: white;
+}
+
+
+h1 ~ h2{
+    background-color: orange;
+    color: white;
+}
+
+
+
+.main-div{
+    width: 500px;
+    height: 600px;
+    background-image: url("https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad");
+    background-repeat: no-repeat;  /* repeat-x repeat-y */
+}
+
+
+.main-div{
+    color: bisque;
+    width: auto;
+    background-image: url("https://admin.ntb.gov.np/image-cache/ebc_tk_adventure_2-1624450765.jpeg?p=main&s=1f72965258be9625bee4886c373424ad");
+    background-attachment: fixed;
+}

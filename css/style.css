@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#about p {
+    flex: 1;
+}
+
+.profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); 
+    color: #000; 
+
+}
+
+#contact {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    color: white;
+}
+
+#contact a:link {
+    color: white;
+}
+
+#contact a:visited {
+    color: white;
+}
+
+#contact a:hover {
+    color: red;
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

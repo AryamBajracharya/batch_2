@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+
+    <style>
+        .flex-container{
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            
+            /*justify */
+
+            /* justify-content: center; */
+            
+            /* justify-content:  end; */
+
+            /* justify-content: space-between; */
+
+            /* justify-content: start; */
+
+            /* justify-content: space-around; */
+
+            justify-content: space-evenly;
+
+            flex-wrap: wrap;
+
+            /* flex-direction: row; */
+
+            flex-direction: row-reverse;
+
+            /* flex-direction: column; */
+
+            /* flex-direction: column-reverse; */
+            
+            align-items: center;
+        }
+
+        .flex-container div{
+            background-color: white;
+            margin: 70px;
+            padding: 20px;
+            font-size: 20px;
+            width: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class ="main-div">
+        <div class ="flex-container">
+            <div>First DIV</div>
+            <div>Second DIV</div>
+            <div>Third DIV</div>
+            <div>Fourth DIV</div>
+            <div>Fifth DIV</div>
+            <div>Sixth DIV</div>
+
+            <!-- <div>tererere</div>
+            <div>tererere</div>
+            <div>tererere</div>
+            <div>tererere</div>
+            <div>tererere</div>
+            <div>tererere</div> -->
+
+        </div>
+    </div>
+
+
+</body>
+</html>

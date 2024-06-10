@@ -1,0 +1,23 @@
+
+/* .demo{
+    display: none;
+} */
+
+.demo{
+    visibility: hidden;
+}
+
+
+.main-div{
+    width: 600px;
+    height: 200px;
+    background-color: black;
+}
+
+.second-div{
+    width: 400x;
+    height: 200px;
+    position:relative;
+    background-color: aqua;
+    
+}
