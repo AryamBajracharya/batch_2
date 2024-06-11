@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Gilroy;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px white;
+    padding: 7px;
+    box-shadow: 0px 0px 10px rgb(235, 228, 217);
+  }
+  .middle {
+    text-align: center;
+    padding: 7px;
+  }
+  .left {
+    display: flex;
+  }
+  .left h2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px;
+  }
+  .left i {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 4px;
+  }
+  .right #sign {
+    width: 70px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 7px;
+  }
+  .right #log {
+    width: 60px;
+    background-color: orangered;
+    color: white;
+    padding: 6px;
+    border: 1px white;
+    border-radius: 7px;
+  }
+  main {
+    width: 100%;
+    height: 450px;
+    position: relative;
+  }
+  #topic {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+  }
+  #topic p {
+    font-weight: bolder;
+    font-size: 85px;
+  }
+  main img {
+    position: absolute;
+    width: 180px;
+    height: 230px;
+  }
+  main #image1 {
+    z-index: 1;
+    right: 44%;
+    bottom: 30%;
+    transform: rotate(-35deg);
+  }
+  main #image2 {
+    z-index: 1;
+    right: 44%;
+    bottom: 30%;
+    transform: rotate(-25deg);
+  }
+  main #image3 {
+    z-index: 1;
+    right: 44%;
+    bottom: 30%;
+    transform: rotate(-15deg);
+  }
+  main #image4 {
+    z-index: 1;
+    right: 44%;
+    bottom: 30%;
+    transform: rotate(-5deg);
+  }
+  footer {
+    padding: 20px;
+    height: 30px;
+    text-align: start;
+  }
+  .sentence {
+    display: inline;
+    padding-left: 30%;
+  }
+  .social-icons {
+    display: inline;
+    padding-left: 90%;
+  }
+  .social-icons a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .footer-text {
+    padding-left: 89%;
+    padding-bottom: 25px;
+  }
