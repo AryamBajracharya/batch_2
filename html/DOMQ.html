@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <style>
+        .favorite {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="book-list"></ul>
+    <input type="text" id="search-bar" placeholder="Search books...">
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="searchBook()">Search</button>
+    <button onclick="removeBook()">Remove Last Book</button>
+    <button onclick="clearSearchHighlights()">Clear Highlights</button>
+
+    <script>
+        
+        function addBook() {
+            const bookTitle = prompt("Enter the book title:");
+            if (bookTitle) {
+                const li = document.createElement("li");
+                li.textContent = bookTitle;
+                document.getElementById("book-list").appendChild(li);
+            }
+        }
+
+        function searchBook() {
+            const searchTerm = document.getElementById("search-bar").value.toLowerCase();
+            const books = document.querySelectorAll("#book-list li");
+            books.forEach(book => {
+                if (book.textContent.toLowerCase().includes(searchTerm)) {
+                    book.style.backgroundColor = "yellow";
+                } else {
+                    book.style.backgroundColor = "";
+                }
+            });
+        }
+
+        function removeBook() {
+            const bookList = document.getElementById("book-list");
+            if (bookList.children.length > 0) {
+                const confirmation = confirm("Are you sure you want to remove the last book?");
+                if (confirmation) {
+                    bookList.removeChild(bookList.lastElementChild);
+                }
+            } else {
+                alert("No books to remove.");
+            }
+        }
+
+        function toggleFavorite(event) {
+            if (event.target.tagName === "LI" && event.target.parentElement.id === "book-list") {
+                event.target.classList.toggle("favorite");
+            }
+        }
+
+        function clearSearchHighlights() {
+            const books = document.querySelectorAll("#book-list li");
+            books.forEach(book => {
+                book.style.backgroundColor = "";
+            });
+        }
+
+        document.getElementById("book-list").addEventListener("click", toggleFavorite);
+    </script>
+</body>
+</html>
