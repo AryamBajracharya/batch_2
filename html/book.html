@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Haven</title>
+    <link rel="stylesheet" href="../css/book.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            
+            <h1>The Book Haven</h1>
+
+        </header>
+
+        <div class="search-container">
+
+            <input type="text" id="search-bar" placeholder="Search for a book...">
+
+        </div>
+
+        <div id="book-list" class="book-list">
+
+            <!-- Books will be listed here -->
+
+        </div>
+
+        <div class="add-book-container">
+
+            <h2>Add a New Book</h2>
+
+            <input type="text" id="new-book-title" placeholder="New book title">
+            <input type="text" id="new-book-author" placeholder="New book author">
+
+            <button id="add-book-btn">Add Book</button>
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-btn">&times;</span>
+            <p id="modal-message"></p>
+            <button id="confirm-btn">Confirm Purchase</button>
+
+        </div>
+    </div>
+
+    <script src="../js/book.js"></script>
+</body>
+</html>
